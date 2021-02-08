@@ -7,17 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		57B086C225CEFEC700E52117 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B086BD25CEFEC700E52117 /* ViewController.swift */; };
+		57B086C225CEFEC700E52117 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B086BD25CEFEC700E52117 /* MainViewController.swift */; };
 		57B086C325CEFEC700E52117 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57B086BE25CEFEC700E52117 /* Main.storyboard */; };
 		57B086C425CEFEC700E52117 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B086BF25CEFEC700E52117 /* AppDelegate.swift */; };
 		57B086C525CEFEC700E52117 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57B086C125CEFEC700E52117 /* Assets.xcassets */; };
 		57B086CE25CEFFB200E52117 /* ProcessesServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B086CD25CEFFB200E52117 /* ProcessesServiceProtocol.swift */; };
 		57B086D225CEFFCB00E52117 /* ProcessesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B086D125CEFFCB00E52117 /* ProcessesService.swift */; };
+		57B086D625CF91FC00E52117 /* CommandServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B086D525CF91FC00E52117 /* CommandServiceProtocol.swift */; };
+		57B086DA25CF921700E52117 /* CommandService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B086D925CF921700E52117 /* CommandService.swift */; };
+		57B086DE25CF9C8D00E52117 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B086DD25CF9C8D00E52117 /* MainViewModel.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		57B0883E25D19DAC00E52117 /* Embed XPC Services */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/XPCServices";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			name = "Embed XPC Services";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		57B086A425CEFDE400E52117 /* ProcessesManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProcessesManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		57B086BD25CEFEC700E52117 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		57B086BD25CEFEC700E52117 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		57B086BE25CEFEC700E52117 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		57B086BF25CEFEC700E52117 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		57B086C125CEFEC700E52117 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -25,6 +41,9 @@
 		57B086C925CEFEDF00E52117 /* ProcessesManager.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ProcessesManager.entitlements; sourceTree = SOURCE_ROOT; };
 		57B086CD25CEFFB200E52117 /* ProcessesServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessesServiceProtocol.swift; sourceTree = "<group>"; };
 		57B086D125CEFFCB00E52117 /* ProcessesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessesService.swift; sourceTree = "<group>"; };
+		57B086D525CF91FC00E52117 /* CommandServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandServiceProtocol.swift; sourceTree = "<group>"; };
+		57B086D925CF921700E52117 /* CommandService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandService.swift; sourceTree = "<group>"; };
+		57B086DD25CF9C8D00E52117 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,8 +97,9 @@
 		57B086BC25CEFEC700E52117 /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				57B086BD25CEFEC700E52117 /* ViewController.swift */,
+				57B086BD25CEFEC700E52117 /* MainViewController.swift */,
 				57B086BE25CEFEC700E52117 /* Main.storyboard */,
+				57B086DD25CF9C8D00E52117 /* MainViewModel.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -95,6 +115,7 @@
 		57B086CB25CEFF8300E52117 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				57B086D425CF91E400E52117 /* Command */,
 				57B086CC25CEFF8F00E52117 /* Processes */,
 			);
 			path = Services;
@@ -109,6 +130,15 @@
 			path = Processes;
 			sourceTree = "<group>";
 		};
+		57B086D425CF91E400E52117 /* Command */ = {
+			isa = PBXGroup;
+			children = (
+				57B086D525CF91FC00E52117 /* CommandServiceProtocol.swift */,
+				57B086D925CF921700E52117 /* CommandService.swift */,
+			);
+			path = Command;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -119,6 +149,7 @@
 				57B086A025CEFDE400E52117 /* Sources */,
 				57B086A125CEFDE400E52117 /* Frameworks */,
 				57B086A225CEFDE400E52117 /* Resources */,
+				57B0883E25D19DAC00E52117 /* Embed XPC Services */,
 			);
 			buildRules = (
 			);
@@ -178,10 +209,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				57B086DE25CF9C8D00E52117 /* MainViewModel.swift in Sources */,
 				57B086CE25CEFFB200E52117 /* ProcessesServiceProtocol.swift in Sources */,
 				57B086D225CEFFCB00E52117 /* ProcessesService.swift in Sources */,
 				57B086C425CEFEC700E52117 /* AppDelegate.swift in Sources */,
-				57B086C225CEFEC700E52117 /* ViewController.swift in Sources */,
+				57B086C225CEFEC700E52117 /* MainViewController.swift in Sources */,
+				57B086D625CF91FC00E52117 /* CommandServiceProtocol.swift in Sources */,
+				57B086DA25CF921700E52117 /* CommandService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,6 +7,16 @@
 
 import Foundation
 
+struct ProcessInfo {
+    let title: String
+    let pid: String
+}
+
 protocol ProcessesServiceProtocol {
+    var processes: [ProcessInfo] { get }
     
+    // Simple async API, we can use some sort of subscription observers here
+     var onUpdate: (([ProcessInfo]) -> Void)? { get set }
+    
+    func sync()
 }
