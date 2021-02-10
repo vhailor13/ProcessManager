@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5793B8A925D2E4BE002A8563 /* ProcessesXPCService.xpc in Embed XPC Services */ = {isa = PBXBuildFile; fileRef = 5793B89E25D2E4BD002A8563 /* ProcessesXPCService.xpc */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		5793B8B025D2FCA9002A8563 /* ProcessesXPCServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5793B8AF25D2FCA9002A8563 /* ProcessesXPCServiceProtocol.swift */; };
+		5793B8B125D2FCA9002A8563 /* ProcessesXPCServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5793B8AF25D2FCA9002A8563 /* ProcessesXPCServiceProtocol.swift */; };
+		5793B8B825D2FD11002A8563 /* ProcessesXPCService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5793B8B625D2FD11002A8563 /* ProcessesXPCService.swift */; };
+		5793B8BE25D2FD86002A8563 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5793B8BD25D2FD86002A8563 /* main.swift */; };
+		5793B8C425D2FDD6002A8563 /* ListenerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5793B8C325D2FDD6002A8563 /* ListenerDelegate.swift */; };
 		57B086C225CEFEC700E52117 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B086BD25CEFEC700E52117 /* MainViewController.swift */; };
 		57B086C325CEFEC700E52117 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57B086BE25CEFEC700E52117 /* Main.storyboard */; };
 		57B086C425CEFEC700E52117 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B086BF25CEFEC700E52117 /* AppDelegate.swift */; };
@@ -18,6 +24,16 @@
 		57B086DE25CF9C8D00E52117 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B086DD25CF9C8D00E52117 /* MainViewModel.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		5793B8A725D2E4BE002A8563 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 57B0869C25CEFDE400E52117 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5793B89D25D2E4BD002A8563;
+			remoteInfo = ProcessesXPCService;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXCopyFilesBuildPhase section */
 		57B0883E25D19DAC00E52117 /* Embed XPC Services */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -25,6 +41,7 @@
 			dstPath = "$(CONTENTS_FOLDER_PATH)/XPCServices";
 			dstSubfolderSpec = 16;
 			files = (
+				5793B8A925D2E4BE002A8563 /* ProcessesXPCService.xpc in Embed XPC Services */,
 			);
 			name = "Embed XPC Services";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -32,6 +49,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		5793B89E25D2E4BD002A8563 /* ProcessesXPCService.xpc */ = {isa = PBXFileReference; explicitFileType = "wrapper.xpc-service"; includeInIndex = 0; path = ProcessesXPCService.xpc; sourceTree = BUILT_PRODUCTS_DIR; };
+		5793B8A625D2E4BE002A8563 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5793B8AF25D2FCA9002A8563 /* ProcessesXPCServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessesXPCServiceProtocol.swift; sourceTree = "<group>"; };
+		5793B8B625D2FD11002A8563 /* ProcessesXPCService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessesXPCService.swift; sourceTree = "<group>"; };
+		5793B8BD25D2FD86002A8563 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		5793B8C325D2FDD6002A8563 /* ListenerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListenerDelegate.swift; sourceTree = "<group>"; };
 		57B086A425CEFDE400E52117 /* ProcessesManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProcessesManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		57B086BD25CEFEC700E52117 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		57B086BE25CEFEC700E52117 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
@@ -47,6 +70,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		5793B89B25D2E4BD002A8563 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		57B086A125CEFDE400E52117 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -57,6 +87,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5793B89F25D2E4BE002A8563 /* ProcessesXPCService */ = {
+			isa = PBXGroup;
+			children = (
+				5793B8AF25D2FCA9002A8563 /* ProcessesXPCServiceProtocol.swift */,
+				5793B8A625D2E4BE002A8563 /* Info.plist */,
+				5793B8B625D2FD11002A8563 /* ProcessesXPCService.swift */,
+				5793B8BD25D2FD86002A8563 /* main.swift */,
+				5793B8C325D2FDD6002A8563 /* ListenerDelegate.swift */,
+			);
+			path = ProcessesXPCService;
+			sourceTree = "<group>";
+		};
 		57B0869B25CEFDE400E52117 = {
 			isa = PBXGroup;
 			children = (
@@ -64,6 +106,7 @@
 				57B086C025CEFEC700E52117 /* Resources */,
 				57B086C825CEFEDF00E52117 /* Info.plist */,
 				57B086C925CEFEDF00E52117 /* ProcessesManager.entitlements */,
+				5793B89F25D2E4BE002A8563 /* ProcessesXPCService */,
 				57B086A525CEFDE400E52117 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -72,6 +115,7 @@
 			isa = PBXGroup;
 			children = (
 				57B086A425CEFDE400E52117 /* ProcessesManager.app */,
+				5793B89E25D2E4BD002A8563 /* ProcessesXPCService.xpc */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -142,6 +186,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		5793B89D25D2E4BD002A8563 /* ProcessesXPCService */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5793B8AC25D2E4BE002A8563 /* Build configuration list for PBXNativeTarget "ProcessesXPCService" */;
+			buildPhases = (
+				5793B89A25D2E4BD002A8563 /* Sources */,
+				5793B89B25D2E4BD002A8563 /* Frameworks */,
+				5793B89C25D2E4BD002A8563 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ProcessesXPCService;
+			productName = ProcessesXPCService;
+			productReference = 5793B89E25D2E4BD002A8563 /* ProcessesXPCService.xpc */;
+			productType = "com.apple.product-type.xpc-service";
+		};
 		57B086A325CEFDE400E52117 /* ProcessesManager */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 57B086B425CEFDE800E52117 /* Build configuration list for PBXNativeTarget "ProcessesManager" */;
@@ -154,6 +215,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				5793B8A825D2E4BE002A8563 /* PBXTargetDependency */,
 			);
 			name = ProcessesManager;
 			productName = ProcessesManager;
@@ -169,6 +231,10 @@
 				LastSwiftUpdateCheck = 1230;
 				LastUpgradeCheck = 1230;
 				TargetAttributes = {
+					5793B89D25D2E4BD002A8563 = {
+						CreatedOnToolsVersion = 12.3;
+						LastSwiftMigration = 1230;
+					};
 					57B086A325CEFDE400E52117 = {
 						CreatedOnToolsVersion = 12.3;
 					};
@@ -188,11 +254,19 @@
 			projectRoot = "";
 			targets = (
 				57B086A325CEFDE400E52117 /* ProcessesManager */,
+				5793B89D25D2E4BD002A8563 /* ProcessesXPCService */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		5793B89C25D2E4BD002A8563 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		57B086A225CEFDE400E52117 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -205,6 +279,17 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		5793B89A25D2E4BD002A8563 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5793B8BE25D2FD86002A8563 /* main.swift in Sources */,
+				5793B8B125D2FCA9002A8563 /* ProcessesXPCServiceProtocol.swift in Sources */,
+				5793B8C425D2FDD6002A8563 /* ListenerDelegate.swift in Sources */,
+				5793B8B825D2FD11002A8563 /* ProcessesXPCService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		57B086A025CEFDE400E52117 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -212,6 +297,7 @@
 				57B086DE25CF9C8D00E52117 /* MainViewModel.swift in Sources */,
 				57B086CE25CEFFB200E52117 /* ProcessesServiceProtocol.swift in Sources */,
 				57B086D225CEFFCB00E52117 /* ProcessesService.swift in Sources */,
+				5793B8B025D2FCA9002A8563 /* ProcessesXPCServiceProtocol.swift in Sources */,
 				57B086C425CEFEC700E52117 /* AppDelegate.swift in Sources */,
 				57B086C225CEFEC700E52117 /* MainViewController.swift in Sources */,
 				57B086D625CF91FC00E52117 /* CommandServiceProtocol.swift in Sources */,
@@ -221,7 +307,58 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		5793B8A825D2E4BE002A8563 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5793B89D25D2E4BD002A8563 /* ProcessesXPCService */;
+			targetProxy = 5793B8A725D2E4BE002A8563 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		5793B8AA25D2E4BE002A8563 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = ProcessesXPCService/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.victor.ProcessesXPCService;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		5793B8AB25D2E4BE002A8563 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = ProcessesXPCService/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.victor.ProcessesXPCService;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 		57B086B225CEFDE800E52117 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -340,6 +477,7 @@
 		57B086B525CEFDE800E52117 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = ProcessesManager.entitlements;
@@ -362,6 +500,7 @@
 		57B086B625CEFDE800E52117 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = ProcessesManager.entitlements;
@@ -384,6 +523,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		5793B8AC25D2E4BE002A8563 /* Build configuration list for PBXNativeTarget "ProcessesXPCService" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5793B8AA25D2E4BE002A8563 /* Debug */,
+				5793B8AB25D2E4BE002A8563 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		57B0869F25CEFDE400E52117 /* Build configuration list for PBXProject "ProcessesManager" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

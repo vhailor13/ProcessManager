@@ -15,10 +15,15 @@ class ProcessesService: ProcessesServiceProtocol {
     
     private let commandService: CommandServiceProtocol
     
+    private var connection: NSXPCConnection?
+    private var remoteService: ProcessesXPCServiceProtocol?
+    
     private init() {
         // TODO: Use DI
         
         self.commandService = CommandService.shared
+        
+        self.startConnection()
     }
     
     func sync() {
@@ -42,6 +47,23 @@ class ProcessesService: ProcessesServiceProtocol {
     }
     
     // MARK: -
+    
+    private func startConnection() {
+        self.connection = NSXPCConnection(serviceName: "com.victor.ProcessesXPCService")
+        self.connection?.remoteObjectInterface = NSXPCInterface(with: ProcessesXPCServiceProtocol.self)
+        
+        self.connection?.invalidationHandler = { NSLog("Connection did invalidate") }
+        self.connection?.interruptionHandler = { NSLog("Connection did interrupt") }
+        
+        
+        self.connection?.resume()
+        self.remoteService = self.connection?.remoteObjectProxyWithErrorHandler({ error in
+            NSLog("Error: description: \(error as NSError)")
+        }) as? ProcessesXPCServiceProtocol
+        
+        self.remoteService?.start()
+    }
+    
     private func parseProcesses(_ listStr: String) -> [ProcessInfo] {
         return listStr.components(separatedBy: .newlines).compactMap({
             let fields = $0.components(separatedBy: .punctuationCharacters)

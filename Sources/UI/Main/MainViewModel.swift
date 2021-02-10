@@ -24,7 +24,7 @@ class MainViewModel {
     // MARK: -
     
     private func start() {
-        self.processesService.sync()
+        //self.processesService.sync()
     }
     
     private func setupUpdates() {
