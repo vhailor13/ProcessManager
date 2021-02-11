@@ -8,7 +8,10 @@
 import Foundation
 
 protocol ProcessesServiceProtocol {
-    var onUpdate: (([ProcessInfo]) -> Void)? { get set }
+    var isUserFilterEnabled: Bool { get set }
     
-    func start()
+    var onUpdate: (([ProcessInfo]) -> Void)? { get set }
+        
+    func update()
+    func kill(_ process: ProcessInfo)
 }

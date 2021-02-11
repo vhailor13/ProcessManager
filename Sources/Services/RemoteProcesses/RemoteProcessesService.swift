@@ -15,20 +15,22 @@ class RemoteProcessesService: RemoteProcessesServiceProtocol {
     
     private var connection: NSXPCConnection?
     private var remoteService: ProcessesXPCServiceProtocol?
+    private weak var timer: Timer?
+    
+    deinit {
+        self.timer?.invalidate()
+        self.timer = nil
+    }
     
     private init() {}
     
     func start() {
         self.startConnection()
-        /*
-        let applications = NSWorkspace.shared.runningApplications
-        applications.forEach { application in
-            self.processes.append(ProcessInfo(
-                title: application.localizedName,
-                pid: application.processIdentifier
-            ))
-        }
- */
+        self.startUpdates()
+    }
+    
+    func kill(_ process: ProcessInfo) {
+        self.remoteService?.kill(process)
     }
     
     // MARK: -
@@ -52,5 +54,18 @@ class RemoteProcessesService: RemoteProcessesServiceProtocol {
             self.processes = items
             self.onUpdate?(items)
         })
+    }
+    
+    private func startUpdates() {
+        self.timer?.invalidate()
+        self.timer = nil
+        
+        let timer = Timer(timeInterval: 1.0, repeats: true) { [weak self] _ in
+            self?.remoteService?.update()
+        }
+        
+        self.timer = timer
+        
+        RunLoop.main.add(timer, forMode: .default)
     }
 }

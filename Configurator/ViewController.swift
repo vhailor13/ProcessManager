@@ -9,6 +9,14 @@ import Cocoa
 
 class ViewController: NSViewController {
 
+    @IBOutlet private weak var checkboxBtn: NSButton!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        self.checkboxBtn.state = RemoteConnectionService.shared.isFilterEnabled ? .on : .off
+    }
+    
     @IBAction func onCheckboxValueChanged(_ btn: NSButton) {
         // TODO: proper view/model/DI services separation (e.g. ProcessesManager target)
         

@@ -11,6 +11,7 @@ protocol RemoteProcessesServiceProtocol {
     var processes: [ProcessInfo] { get }
     
     func start()
+    func kill(_ process: ProcessInfo)
     
     // Simple async API, we can use some sort of subscription observers here
      var onUpdate: (([ProcessInfo]) -> Void)? { get set }

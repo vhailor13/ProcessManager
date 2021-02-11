@@ -21,6 +21,10 @@ class MainViewModel {
         self.start()
     }
     
+    func kill(_ process: ProcessInfo) {
+        self.processesService.kill(process)
+    }
+    
     // MARK: -
     
     private func start() {

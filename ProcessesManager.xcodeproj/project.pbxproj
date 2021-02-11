@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		578464C025D532640094FBA8 /* ProcessOptionsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578464BF25D532640094FBA8 /* ProcessOptionsCell.swift */; };
 		5793B8A925D2E4BE002A8563 /* ProcessesXPCService.xpc in Embed XPC Services */ = {isa = PBXBuildFile; fileRef = 5793B89E25D2E4BD002A8563 /* ProcessesXPCService.xpc */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		5793B8B025D2FCA9002A8563 /* ProcessesXPCServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5793B8AF25D2FCA9002A8563 /* ProcessesXPCServiceProtocol.swift */; };
 		5793B8B125D2FCA9002A8563 /* ProcessesXPCServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5793B8AF25D2FCA9002A8563 /* ProcessesXPCServiceProtocol.swift */; };
@@ -83,6 +84,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		578464BF25D532640094FBA8 /* ProcessOptionsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessOptionsCell.swift; sourceTree = "<group>"; };
 		5793B89E25D2E4BD002A8563 /* ProcessesXPCService.xpc */ = {isa = PBXFileReference; explicitFileType = "wrapper.xpc-service"; includeInIndex = 0; path = ProcessesXPCService.xpc; sourceTree = BUILT_PRODUCTS_DIR; };
 		5793B8A625D2E4BE002A8563 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5793B8AF25D2FCA9002A8563 /* ProcessesXPCServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessesXPCServiceProtocol.swift; sourceTree = "<group>"; };
@@ -269,6 +271,7 @@
 				57B086BD25CEFEC700E52117 /* MainViewController.swift */,
 				57B086BE25CEFEC700E52117 /* Main.storyboard */,
 				57B086DD25CF9C8D00E52117 /* MainViewModel.swift */,
+				578464BF25D532640094FBA8 /* ProcessOptionsCell.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -469,6 +472,7 @@
 				5793B8B025D2FCA9002A8563 /* ProcessesXPCServiceProtocol.swift in Sources */,
 				57B086C425CEFEC700E52117 /* AppDelegate.swift in Sources */,
 				57B086C225CEFEC700E52117 /* MainViewController.swift in Sources */,
+				578464C025D532640094FBA8 /* ProcessOptionsCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -9,6 +9,9 @@ import Foundation
 
 @objc protocol ProcessesXPCServiceProtocol {
     func start(onUpdate: @escaping ((ProcessesList) -> Void))
+    func update()
+    func kill(_ process: ProcessInfo)
     
+    func isFilterEnabled() -> Bool
     func setFilterEnabled(_ isEnabled: Bool)
 }

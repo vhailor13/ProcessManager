@@ -10,6 +10,8 @@ import Foundation
 class RemoteConnectionService: RemoteConnectionServiceProtocol {
     static let shared = RemoteConnectionService()
     
+    var isFilterEnabled: Bool = false
+    
     private var connection: NSXPCConnection?
     private var remoteService: ProcessesXPCServiceProtocol?
     

@@ -8,5 +8,7 @@
 import Foundation
 
 protocol RemoteConnectionServiceProtocol {
+    var isFilterEnabled: Bool { get }
+    
     func setFilterEnabled(_ isEnabled: Bool)
 }

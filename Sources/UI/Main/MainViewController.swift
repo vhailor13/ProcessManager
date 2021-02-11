@@ -58,9 +58,19 @@ extension MainViewController: NSTableViewDataSource, NSTableViewDelegate {
         }
         
         if tableColumn == tableView.tableColumns[2] {
-            let identifier = NSUserInterfaceItemIdentifier(rawValue: "ProcessCellOptions")
+            let identifier = NSUserInterfaceItemIdentifier(rawValue: "ProcessCellUser")
             let cell = tableView.makeView(withIdentifier: identifier, owner: nil) as? NSTableCellView
+            cell?.textField?.stringValue = item.user
             
+            return cell
+        }
+        
+        if tableColumn == tableView.tableColumns[3] {
+            let identifier = NSUserInterfaceItemIdentifier(rawValue: "ProcessCellOptions")
+            let cell = tableView.makeView(withIdentifier: identifier, owner: nil) as? ProcessOptionsCell
+            cell?.onKill = { [weak self] in
+                self?.viewModel.kill(item)
+            }
             
             return cell
         }

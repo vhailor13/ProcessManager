@@ -78,6 +78,9 @@
                             </button>
                         </subviews>
                     </view>
+                    <connections>
+                        <outlet property="checkboxBtn" destination="C1J-2E-n4B" id="rbi-LK-CAT"/>
+                    </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
