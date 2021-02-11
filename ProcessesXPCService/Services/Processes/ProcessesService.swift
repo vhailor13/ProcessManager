@@ -38,7 +38,7 @@ class ProcessesService: ProcessesServiceProtocol {
             
             guard fields.count == 2 else { return nil }
             
-            return ProcessInfo(title: fields[0], pid: fields[1])
+            return ProcessInfo(title: fields[1], pid: fields[0])
         })
     }
 }

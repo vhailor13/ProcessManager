@@ -9,7 +9,7 @@ import Foundation
 
 class MainViewModel {
     
-    var onUpdate: (([String]) -> Void)?
+    var onUpdate: (([ProcessInfo]) -> Void)?
     
     private var processesService: RemoteProcessesServiceProtocol
     
@@ -29,7 +29,7 @@ class MainViewModel {
     
     private func setupUpdates() {
         self.processesService.onUpdate = { [weak self] list in
-            self?.onUpdate?( list.map({ $0.title }) )
+            self?.onUpdate?( list )
         }
     }
 }
