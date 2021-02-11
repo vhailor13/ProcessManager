@@ -11,11 +11,11 @@ class MainViewModel {
     
     var onUpdate: (([String]) -> Void)?
     
-    private var processesService: ProcessesServiceProtocol
+    private var processesService: RemoteProcessesServiceProtocol
     
     init() {
         // TODO: use DI
-        self.processesService = ProcessesService.shared
+        self.processesService = RemoteProcessesService.shared
         
         self.setupUpdates()
         self.start()
@@ -24,7 +24,7 @@ class MainViewModel {
     // MARK: -
     
     private func start() {
-        //self.processesService.sync()
+        self.processesService.start()
     }
     
     private func setupUpdates() {

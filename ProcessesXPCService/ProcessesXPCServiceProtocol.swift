@@ -8,5 +8,7 @@
 import Foundation
 
 @objc protocol ProcessesXPCServiceProtocol {
-    func start()
+    func start(onUpdate: @escaping ((ProcessesList) -> Void))
+    
+    func setFilterEnabled(_ isEnabled: Bool)
 }

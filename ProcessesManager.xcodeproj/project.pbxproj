@@ -13,14 +13,30 @@
 		5793B8B825D2FD11002A8563 /* ProcessesXPCService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5793B8B625D2FD11002A8563 /* ProcessesXPCService.swift */; };
 		5793B8BE25D2FD86002A8563 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5793B8BD25D2FD86002A8563 /* main.swift */; };
 		5793B8C425D2FDD6002A8563 /* ListenerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5793B8C325D2FDD6002A8563 /* ListenerDelegate.swift */; };
+		5793B8FC25D44B2B002A8563 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5793B8FB25D44B2B002A8563 /* AppDelegate.swift */; };
+		5793B8FE25D44B2B002A8563 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5793B8FD25D44B2B002A8563 /* ViewController.swift */; };
+		5793B90025D44B2F002A8563 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5793B8FF25D44B2F002A8563 /* Assets.xcassets */; };
+		5793B90325D44B2F002A8563 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5793B90125D44B2F002A8563 /* Main.storyboard */; };
+		5793B91225D44C92002A8563 /* RemoteConnectionServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5793B91125D44C92002A8563 /* RemoteConnectionServiceProtocol.swift */; };
+		5793B91725D44CAC002A8563 /* RemoteConnectionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5793B91625D44CAC002A8563 /* RemoteConnectionService.swift */; };
+		5793B92C25D4D2E1002A8563 /* ProcessesXPCServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5793B8AF25D2FCA9002A8563 /* ProcessesXPCServiceProtocol.swift */; };
+		5793B93425D4D556002A8563 /* ProcessesXPCService.xpc in Embed XPC Services */ = {isa = PBXBuildFile; fileRef = 5793B89E25D2E4BD002A8563 /* ProcessesXPCService.xpc */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		5793B93F25D4D5BE002A8563 /* CommandService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5793B93D25D4D5BE002A8563 /* CommandService.swift */; };
+		5793B94025D4D5BE002A8563 /* CommandServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5793B93E25D4D5BE002A8563 /* CommandServiceProtocol.swift */; };
+		5793B96B25D4E1A3002A8563 /* ProcessesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5793B96925D4E1A3002A8563 /* ProcessesService.swift */; };
+		5793B96C25D4E1A3002A8563 /* ProcessesServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5793B96A25D4E1A3002A8563 /* ProcessesServiceProtocol.swift */; };
+		5793B97125D4E1E6002A8563 /* ProcessInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5793B97025D4E1E6002A8563 /* ProcessInfo.swift */; };
+		5793B97525D4E1F8002A8563 /* ProcessInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5793B97025D4E1E6002A8563 /* ProcessInfo.swift */; };
+		5793B97A25D4FDC5002A8563 /* ProcessesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5793B97925D4FDC5002A8563 /* ProcessesList.swift */; };
+		5793B97E25D4FE89002A8563 /* ProcessesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5793B97925D4FDC5002A8563 /* ProcessesList.swift */; };
+		5793B98225D4FE8A002A8563 /* ProcessesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5793B97925D4FDC5002A8563 /* ProcessesList.swift */; };
+		5793B98625D4FE8F002A8563 /* ProcessInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5793B97025D4E1E6002A8563 /* ProcessInfo.swift */; };
 		57B086C225CEFEC700E52117 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B086BD25CEFEC700E52117 /* MainViewController.swift */; };
 		57B086C325CEFEC700E52117 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57B086BE25CEFEC700E52117 /* Main.storyboard */; };
 		57B086C425CEFEC700E52117 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B086BF25CEFEC700E52117 /* AppDelegate.swift */; };
 		57B086C525CEFEC700E52117 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57B086C125CEFEC700E52117 /* Assets.xcassets */; };
-		57B086CE25CEFFB200E52117 /* ProcessesServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B086CD25CEFFB200E52117 /* ProcessesServiceProtocol.swift */; };
-		57B086D225CEFFCB00E52117 /* ProcessesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B086D125CEFFCB00E52117 /* ProcessesService.swift */; };
-		57B086D625CF91FC00E52117 /* CommandServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B086D525CF91FC00E52117 /* CommandServiceProtocol.swift */; };
-		57B086DA25CF921700E52117 /* CommandService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B086D925CF921700E52117 /* CommandService.swift */; };
+		57B086CE25CEFFB200E52117 /* RemoteProcessesServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B086CD25CEFFB200E52117 /* RemoteProcessesServiceProtocol.swift */; };
+		57B086D225CEFFCB00E52117 /* RemoteProcessesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B086D125CEFFCB00E52117 /* RemoteProcessesService.swift */; };
 		57B086DE25CF9C8D00E52117 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B086DD25CF9C8D00E52117 /* MainViewModel.swift */; };
 /* End PBXBuildFile section */
 
@@ -32,9 +48,27 @@
 			remoteGlobalIDString = 5793B89D25D2E4BD002A8563;
 			remoteInfo = ProcessesXPCService;
 		};
+		5793B93525D4D556002A8563 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 57B0869C25CEFDE400E52117 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5793B89D25D2E4BD002A8563;
+			remoteInfo = ProcessesXPCService;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		5793B93725D4D556002A8563 /* Embed XPC Services */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/XPCServices";
+			dstSubfolderSpec = 16;
+			files = (
+				5793B93425D4D556002A8563 /* ProcessesXPCService.xpc in Embed XPC Services */,
+			);
+			name = "Embed XPC Services";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		57B0883E25D19DAC00E52117 /* Embed XPC Services */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -55,6 +89,21 @@
 		5793B8B625D2FD11002A8563 /* ProcessesXPCService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessesXPCService.swift; sourceTree = "<group>"; };
 		5793B8BD25D2FD86002A8563 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		5793B8C325D2FDD6002A8563 /* ListenerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListenerDelegate.swift; sourceTree = "<group>"; };
+		5793B8F925D44B2B002A8563 /* Configurator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Configurator.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5793B8FB25D44B2B002A8563 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5793B8FD25D44B2B002A8563 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5793B8FF25D44B2F002A8563 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5793B90225D44B2F002A8563 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5793B90425D44B2F002A8563 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5793B90525D44B2F002A8563 /* Configurator.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Configurator.entitlements; sourceTree = "<group>"; };
+		5793B91125D44C92002A8563 /* RemoteConnectionServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteConnectionServiceProtocol.swift; sourceTree = "<group>"; };
+		5793B91625D44CAC002A8563 /* RemoteConnectionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteConnectionService.swift; sourceTree = "<group>"; };
+		5793B93D25D4D5BE002A8563 /* CommandService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommandService.swift; sourceTree = "<group>"; };
+		5793B93E25D4D5BE002A8563 /* CommandServiceProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommandServiceProtocol.swift; sourceTree = "<group>"; };
+		5793B96925D4E1A3002A8563 /* ProcessesService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProcessesService.swift; sourceTree = "<group>"; };
+		5793B96A25D4E1A3002A8563 /* ProcessesServiceProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProcessesServiceProtocol.swift; sourceTree = "<group>"; };
+		5793B97025D4E1E6002A8563 /* ProcessInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessInfo.swift; sourceTree = "<group>"; };
+		5793B97925D4FDC5002A8563 /* ProcessesList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessesList.swift; sourceTree = "<group>"; };
 		57B086A425CEFDE400E52117 /* ProcessesManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProcessesManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		57B086BD25CEFEC700E52117 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		57B086BE25CEFEC700E52117 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
@@ -62,15 +111,20 @@
 		57B086C125CEFEC700E52117 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		57B086C825CEFEDF00E52117 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = SOURCE_ROOT; };
 		57B086C925CEFEDF00E52117 /* ProcessesManager.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ProcessesManager.entitlements; sourceTree = SOURCE_ROOT; };
-		57B086CD25CEFFB200E52117 /* ProcessesServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessesServiceProtocol.swift; sourceTree = "<group>"; };
-		57B086D125CEFFCB00E52117 /* ProcessesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessesService.swift; sourceTree = "<group>"; };
-		57B086D525CF91FC00E52117 /* CommandServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandServiceProtocol.swift; sourceTree = "<group>"; };
-		57B086D925CF921700E52117 /* CommandService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandService.swift; sourceTree = "<group>"; };
+		57B086CD25CEFFB200E52117 /* RemoteProcessesServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteProcessesServiceProtocol.swift; sourceTree = "<group>"; };
+		57B086D125CEFFCB00E52117 /* RemoteProcessesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteProcessesService.swift; sourceTree = "<group>"; };
 		57B086DD25CF9C8D00E52117 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		5793B89B25D2E4BD002A8563 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5793B8F625D44B2B002A8563 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -90,13 +144,81 @@
 		5793B89F25D2E4BE002A8563 /* ProcessesXPCService */ = {
 			isa = PBXGroup;
 			children = (
+				5793B93B25D4D5BE002A8563 /* Services */,
 				5793B8AF25D2FCA9002A8563 /* ProcessesXPCServiceProtocol.swift */,
-				5793B8A625D2E4BE002A8563 /* Info.plist */,
 				5793B8B625D2FD11002A8563 /* ProcessesXPCService.swift */,
 				5793B8BD25D2FD86002A8563 /* main.swift */,
 				5793B8C325D2FDD6002A8563 /* ListenerDelegate.swift */,
+				5793B8A625D2E4BE002A8563 /* Info.plist */,
 			);
 			path = ProcessesXPCService;
+			sourceTree = "<group>";
+		};
+		5793B8FA25D44B2B002A8563 /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				5793B90F25D44C2E002A8563 /* Services */,
+				5793B8FB25D44B2B002A8563 /* AppDelegate.swift */,
+				5793B8FD25D44B2B002A8563 /* ViewController.swift */,
+				5793B8FF25D44B2F002A8563 /* Assets.xcassets */,
+				5793B90125D44B2F002A8563 /* Main.storyboard */,
+				5793B90425D44B2F002A8563 /* Info.plist */,
+				5793B90525D44B2F002A8563 /* Configurator.entitlements */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		5793B90F25D44C2E002A8563 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				5793B91025D44C4E002A8563 /* RemoteConnection */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		5793B91025D44C4E002A8563 /* RemoteConnection */ = {
+			isa = PBXGroup;
+			children = (
+				5793B91125D44C92002A8563 /* RemoteConnectionServiceProtocol.swift */,
+				5793B91625D44CAC002A8563 /* RemoteConnectionService.swift */,
+			);
+			path = RemoteConnection;
+			sourceTree = "<group>";
+		};
+		5793B93325D4D556002A8563 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5793B93B25D4D5BE002A8563 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				5793B96825D4DD1E002A8563 /* Processes */,
+				5793B93C25D4D5BE002A8563 /* Command */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		5793B93C25D4D5BE002A8563 /* Command */ = {
+			isa = PBXGroup;
+			children = (
+				5793B93D25D4D5BE002A8563 /* CommandService.swift */,
+				5793B93E25D4D5BE002A8563 /* CommandServiceProtocol.swift */,
+			);
+			path = Command;
+			sourceTree = "<group>";
+		};
+		5793B96825D4DD1E002A8563 /* Processes */ = {
+			isa = PBXGroup;
+			children = (
+				5793B96925D4E1A3002A8563 /* ProcessesService.swift */,
+				5793B96A25D4E1A3002A8563 /* ProcessesServiceProtocol.swift */,
+				5793B97025D4E1E6002A8563 /* ProcessInfo.swift */,
+				5793B97925D4FDC5002A8563 /* ProcessesList.swift */,
+			);
+			path = Processes;
 			sourceTree = "<group>";
 		};
 		57B0869B25CEFDE400E52117 = {
@@ -107,7 +229,9 @@
 				57B086C825CEFEDF00E52117 /* Info.plist */,
 				57B086C925CEFEDF00E52117 /* ProcessesManager.entitlements */,
 				5793B89F25D2E4BE002A8563 /* ProcessesXPCService */,
+				5793B8FA25D44B2B002A8563 /* Configurator */,
 				57B086A525CEFDE400E52117 /* Products */,
+				5793B93325D4D556002A8563 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -116,6 +240,7 @@
 			children = (
 				57B086A425CEFDE400E52117 /* ProcessesManager.app */,
 				5793B89E25D2E4BD002A8563 /* ProcessesXPCService.xpc */,
+				5793B8F925D44B2B002A8563 /* Configurator.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -159,28 +284,18 @@
 		57B086CB25CEFF8300E52117 /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				57B086D425CF91E400E52117 /* Command */,
-				57B086CC25CEFF8F00E52117 /* Processes */,
+				57B086CC25CEFF8F00E52117 /* RemoteProcesses */,
 			);
 			path = Services;
 			sourceTree = "<group>";
 		};
-		57B086CC25CEFF8F00E52117 /* Processes */ = {
+		57B086CC25CEFF8F00E52117 /* RemoteProcesses */ = {
 			isa = PBXGroup;
 			children = (
-				57B086CD25CEFFB200E52117 /* ProcessesServiceProtocol.swift */,
-				57B086D125CEFFCB00E52117 /* ProcessesService.swift */,
+				57B086CD25CEFFB200E52117 /* RemoteProcessesServiceProtocol.swift */,
+				57B086D125CEFFCB00E52117 /* RemoteProcessesService.swift */,
 			);
-			path = Processes;
-			sourceTree = "<group>";
-		};
-		57B086D425CF91E400E52117 /* Command */ = {
-			isa = PBXGroup;
-			children = (
-				57B086D525CF91FC00E52117 /* CommandServiceProtocol.swift */,
-				57B086D925CF921700E52117 /* CommandService.swift */,
-			);
-			path = Command;
+			path = RemoteProcesses;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -202,6 +317,25 @@
 			productName = ProcessesXPCService;
 			productReference = 5793B89E25D2E4BD002A8563 /* ProcessesXPCService.xpc */;
 			productType = "com.apple.product-type.xpc-service";
+		};
+		5793B8F825D44B2B002A8563 /* Configurator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5793B90625D44B2F002A8563 /* Build configuration list for PBXNativeTarget "Configurator" */;
+			buildPhases = (
+				5793B8F525D44B2B002A8563 /* Sources */,
+				5793B8F625D44B2B002A8563 /* Frameworks */,
+				5793B8F725D44B2B002A8563 /* Resources */,
+				5793B93725D4D556002A8563 /* Embed XPC Services */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5793B93625D4D556002A8563 /* PBXTargetDependency */,
+			);
+			name = Configurator;
+			productName = Configurator;
+			productReference = 5793B8F925D44B2B002A8563 /* Configurator.app */;
+			productType = "com.apple.product-type.application";
 		};
 		57B086A325CEFDE400E52117 /* ProcessesManager */ = {
 			isa = PBXNativeTarget;
@@ -235,6 +369,9 @@
 						CreatedOnToolsVersion = 12.3;
 						LastSwiftMigration = 1230;
 					};
+					5793B8F825D44B2B002A8563 = {
+						CreatedOnToolsVersion = 12.3;
+					};
 					57B086A325CEFDE400E52117 = {
 						CreatedOnToolsVersion = 12.3;
 					};
@@ -255,6 +392,7 @@
 			targets = (
 				57B086A325CEFDE400E52117 /* ProcessesManager */,
 				5793B89D25D2E4BD002A8563 /* ProcessesXPCService */,
+				5793B8F825D44B2B002A8563 /* Configurator */,
 			);
 		};
 /* End PBXProject section */
@@ -264,6 +402,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5793B8F725D44B2B002A8563 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5793B90025D44B2F002A8563 /* Assets.xcassets in Resources */,
+				5793B90325D44B2F002A8563 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,7 +433,27 @@
 				5793B8BE25D2FD86002A8563 /* main.swift in Sources */,
 				5793B8B125D2FCA9002A8563 /* ProcessesXPCServiceProtocol.swift in Sources */,
 				5793B8C425D2FDD6002A8563 /* ListenerDelegate.swift in Sources */,
+				5793B96C25D4E1A3002A8563 /* ProcessesServiceProtocol.swift in Sources */,
+				5793B97125D4E1E6002A8563 /* ProcessInfo.swift in Sources */,
+				5793B93F25D4D5BE002A8563 /* CommandService.swift in Sources */,
 				5793B8B825D2FD11002A8563 /* ProcessesXPCService.swift in Sources */,
+				5793B97A25D4FDC5002A8563 /* ProcessesList.swift in Sources */,
+				5793B94025D4D5BE002A8563 /* CommandServiceProtocol.swift in Sources */,
+				5793B96B25D4E1A3002A8563 /* ProcessesService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5793B8F525D44B2B002A8563 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5793B92C25D4D2E1002A8563 /* ProcessesXPCServiceProtocol.swift in Sources */,
+				5793B91225D44C92002A8563 /* RemoteConnectionServiceProtocol.swift in Sources */,
+				5793B91725D44CAC002A8563 /* RemoteConnectionService.swift in Sources */,
+				5793B98625D4FE8F002A8563 /* ProcessInfo.swift in Sources */,
+				5793B8FE25D44B2B002A8563 /* ViewController.swift in Sources */,
+				5793B8FC25D44B2B002A8563 /* AppDelegate.swift in Sources */,
+				5793B98225D4FE8A002A8563 /* ProcessesList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,13 +462,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				57B086DE25CF9C8D00E52117 /* MainViewModel.swift in Sources */,
-				57B086CE25CEFFB200E52117 /* ProcessesServiceProtocol.swift in Sources */,
-				57B086D225CEFFCB00E52117 /* ProcessesService.swift in Sources */,
+				5793B97E25D4FE89002A8563 /* ProcessesList.swift in Sources */,
+				57B086CE25CEFFB200E52117 /* RemoteProcessesServiceProtocol.swift in Sources */,
+				57B086D225CEFFCB00E52117 /* RemoteProcessesService.swift in Sources */,
+				5793B97525D4E1F8002A8563 /* ProcessInfo.swift in Sources */,
 				5793B8B025D2FCA9002A8563 /* ProcessesXPCServiceProtocol.swift in Sources */,
 				57B086C425CEFEC700E52117 /* AppDelegate.swift in Sources */,
 				57B086C225CEFEC700E52117 /* MainViewController.swift in Sources */,
-				57B086D625CF91FC00E52117 /* CommandServiceProtocol.swift in Sources */,
-				57B086DA25CF921700E52117 /* CommandService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -313,7 +480,23 @@
 			target = 5793B89D25D2E4BD002A8563 /* ProcessesXPCService */;
 			targetProxy = 5793B8A725D2E4BE002A8563 /* PBXContainerItemProxy */;
 		};
+		5793B93625D4D556002A8563 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5793B89D25D2E4BD002A8563 /* ProcessesXPCService */;
+			targetProxy = 5793B93525D4D556002A8563 /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5793B90125D44B2F002A8563 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5793B90225D44B2F002A8563 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		5793B8AA25D2E4BE002A8563 /* Debug */ = {
@@ -355,6 +538,50 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.victor.ProcessesXPCService;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		5793B90725D44B2F002A8563 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Configurator/Configurator.entitlements;
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = Configurator/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_BUNDLE_IDENTIFIER = com.victor.Configurator;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		5793B90825D44B2F002A8563 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Configurator/Configurator.entitlements;
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = Configurator/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_BUNDLE_IDENTIFIER = com.victor.Configurator;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
@@ -528,6 +755,15 @@
 			buildConfigurations = (
 				5793B8AA25D2E4BE002A8563 /* Debug */,
 				5793B8AB25D2E4BE002A8563 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5793B90625D44B2F002A8563 /* Build configuration list for PBXNativeTarget "Configurator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5793B90725D44B2F002A8563 /* Debug */,
+				5793B90825D44B2F002A8563 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
